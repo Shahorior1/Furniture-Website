@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Furniture</a></h1>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Explore our collection of high-quality furniture for every space</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <div class="filters-sidebar">
+                    <div class="product-filters">
+                        <div class="filter-section">
+                            <h3>Categories</h3>
+                            <div class="category-filters">
+                                <button class="category-filter active" data-category="all">All</button>
+                                <button class="category-filter" data-category="Living">Living Room</button>
+                                <button class="category-filter" data-category="Bedroom">Bedroom</button>
+                                <button class="category-filter" data-category="Dining">Dining</button>
+                                <button class="category-filter" data-category="Kitchen">Kitchen</button>
+                                <button class="category-filter" data-category="Kids">Kids</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3>Price Range</h3>
+                            <div class="price-filter">
+                                <input type="number" id="min-price" placeholder="Min Price" min="0">
+                                <input type="number" id="max-price" placeholder="Max Price" min="0">
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3>Availability</h3>
+                            <div class="availability-filter">
+                                <label>
+                                    <input type="checkbox" id="in-stock"> In Stock Only
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3>Sort By</h3>
+                            <div class="sort-filter">
+                                <select id="sort-select">
+                                    <option value="default">Featured</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="name-asc">Name: A to Z</option>
+                                    <option value="name-desc">Name: Z to A</option>
+                                    <option value="rating">Top Rated</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-content">
+                    <div class="products-header">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search products...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="products-count">Showing <span id="product-count">8</span> products</div>
+                    </div>
+                    
+                    <div id="products-container" class="products-container">
+                        <!-- Products will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-info">
+              <h3>Beauty Care</h3>
+              <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              <h3>Follow Us</h3>
+            </div>
+            <div class="footer-instagram">
+              <h3>Instagram Shop</h3>
+              <div class="instagram-images">
+                <img src="Asset/IG-1.jpeg" alt="Instagram Shop" class="instagram-image">
+                <img src="Asset/IG-2.jpg" alt="Instagram Shop" class="instagram-image">
+                <img src="Asset/IG-3.jpg" alt="Instagram Shop" class="instagram-image">
+                <img src="Asset/IG-4.jpeg" alt="Instagram Shop" class="instagram-image">
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
