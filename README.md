@@ -4,7 +4,7 @@ A clean, modern, and fully responsive furniture website built to showcase stylis
 
 ![Live Demo](https://furniture-websitess.netlify.app/)
 
-## 🌐 Live Demo
+  Live Demo
 
 🔗 [Visit the Website](https://furniture-websitess.netlify.app/)
 
